@@ -2,11 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: #f4f4f9; 
-    color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    background-color: #000319; 
 }
 
 #menu-navigation-tp {
@@ -87,28 +85,87 @@ body {
     color: #CBACF9;
 }
 
-
 main {
-    flex: 1;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
 }
 
-.main {
-    flex: 1; 
-    display: flex;        
-    justify-content: center; 
-    align-items: center;     
-    background-color: #fff;  
-}
-
-.main h1 {
-    color: #000319; 
-    font-size: 48px;
-    margin: 0;
-}
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #000319;
+    color: #CBACF9;
     text-align: center;
+    padding: 20px;
+    margin-top: auto; 
+}
+
+.bilan-container {
+    max-width: 900px;
+    width: 100%;
+    background: linear-gradient(145deg, #000319, #0a0e35); 
+    color: #E0E0E0;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); 
+    border: 1px solid rgba(203, 172, 249, 0.2); 
+}
+
+.bilan-titre {
+    margin-top: 0;
+    text-align: center;
+    font-size: 2.2rem;
+    color: #CBACF9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.bilan-titre::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #CBACF9;
+    border-radius: 2px;
+}
+
+.bilan-section {
+    background-color: rgba(255, 255, 255, 0.05); 
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bilan-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.bilan-sous-titre {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 0;
+    border-left: 5px solid #CBACF9; 
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.bilan-liste {
+    list-style: none; 
+    padding-left: 0;
+}
+
+.bilan-liste li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+}
+
+.bilan-liste strong {
+    color: #CBACF9;
 }
